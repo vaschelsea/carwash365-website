@@ -1,6 +1,12 @@
+import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
-const partners = ["Alfred", "AMLI Residential", "The Hayworth", "Arabella"];
+const partners = [
+  { key: "alfred", file: "logo1.png", alt: "Alfred" },
+  { key: "amli", file: "logo2.png", alt: "AMLI Residential" },
+  { key: "hayworth", file: "logo3.webp", alt: "The Hayworth" },
+  { key: "arabella", file: "logo4.png", alt: "Arabella" },
+];
 
 export default function SocialProof() {
   return (
@@ -26,26 +32,23 @@ export default function SocialProof() {
               className="text-sm md:text-[0.9375rem] font-medium text-center md:text-left"
               style={{ color: "var(--color-text-on-dark-muted)" }}
             >
-              Trusted at{" "}
-              <span className="text-white font-semibold">40+ properties</span>{" "}
-              across Houston, Austin, Charlotte, Miami, Nashville, Denver &amp;
-              Dallas
+              Serving{" "}
+              <span className="text-white font-semibold">
+                40+ apartment communities
+              </span>{" "}
+              across 7 cities
             </p>
 
             <div className="flex items-center gap-6 md:gap-8 flex-shrink-0">
-              {partners.map((name) => (
-                <div
-                  key={name}
-                  className="flex items-center justify-center px-4 py-2 rounded-lg text-xs font-medium"
-                  style={{
-                    background: "rgba(255, 255, 255, 0.06)",
-                    border: "1px solid rgba(255, 255, 255, 0.08)",
-                    color: "rgba(255, 255, 255, 0.5)",
-                    minWidth: "80px",
-                  }}
-                >
-                  {name}
-                </div>
+              {partners.map((partner) => (
+                <Image
+                  key={partner.key}
+                  src={`/images/partners/${partner.file}`}
+                  alt={partner.alt}
+                  width={100}
+                  height={36}
+                  className="h-7 md:h-8 w-auto opacity-50 hover:opacity-80 transition-opacity"
+                />
               ))}
             </div>
           </div>

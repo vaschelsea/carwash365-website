@@ -178,6 +178,9 @@ export default function Pricing() {
               Start with Basic — you can always upgrade later.
             </strong>
           </p>
+          <p className="text-sm text-[var(--color-text-muted)] mt-2">
+            Limited availability per building. Check if your property is active.
+          </p>
         </AnimatedSection>
       </div>
     </section>

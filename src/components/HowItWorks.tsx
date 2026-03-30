@@ -16,7 +16,7 @@ const steps = [
   },
   {
     icon: MapPin,
-    title: "Drop Your Pin",
+    title: "Share Your Spot",
     description:
       "Let us know where you usually park — garage level, spot number, or general area. That's the last thing you'll ever need to do.",
   },
@@ -56,8 +56,8 @@ export default function HowItWorks() {
             <span className="text-primary">Always Clean</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
-            No apps to check. No appointments to remember. Here&apos;s how it
-            works.
+            No apps. No appointments. Just four quick steps and you&apos;re set
+            for good.
           </p>
         </AnimatedSection>
 

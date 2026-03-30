@@ -10,8 +10,8 @@ export default function FinalCTA() {
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <AnimatedSection>
           <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-white mb-6 max-w-3xl mx-auto">
-            Ready to Stop Thinking About{" "}
-            <span className="text-primary-sky">Car Washes?</span>
+            What If Your Car Just{" "}
+            <span className="text-primary-sky">Stayed Clean?</span>
           </h2>
           <p
             className="text-base md:text-lg leading-relaxed max-w-[38rem] mx-auto mb-10"

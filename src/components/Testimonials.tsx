@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 const testimonials = [
   {
     quote:
-      "I forgot what it was like to have a dirty car. Every Thursday morning I walk out and it's just… done. It honestly feels like a concierge service, not a car wash.",
+      "Every Thursday morning I walk out and my car is just… done. I forgot what it was like to even think about it. Honestly feels like concierge service, not a car wash.",
     name: "Sarah M.",
     location: "Resident, The Hayworth — Houston",
   },
@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     quote:
-      "We brought CarWash365 into three of our properties and the feedback from residents has been incredible. It's become one of the most talked-about amenities we offer — and it costs us nothing.",
+      "Residents won't stop talking about it. We launched at three properties and it's already the most-mentioned amenity in our surveys — and it doesn't cost us a dime.",
     name: "Regional Property Manager",
     location: "Portfolio Operator — Texas",
   },
