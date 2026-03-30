@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 const partners = [
   { key: "alfred", file: "logo1.png", alt: "Alfred" },
   { key: "amli", file: "logo2.png", alt: "AMLI Residential" },
-  { key: "hayworth", file: "logo3.webp", alt: "The Hayworth" },
+  { key: "hayworth", file: "logo3.png", alt: "The Hayworth" },
   { key: "arabella", file: "logo4.png", alt: "Arabella" },
 ];
 
@@ -29,7 +29,7 @@ export default function SocialProof() {
             }}
           >
             <p
-              className="text-sm md:text-[0.9375rem] font-medium text-center md:text-left"
+              className="text-sm md:text-[0.9375rem] font-medium text-center md:text-left flex-shrink-0"
               style={{ color: "var(--color-text-on-dark-muted)" }}
             >
               Serving{" "}
@@ -39,7 +39,8 @@ export default function SocialProof() {
               across 7 cities
             </p>
 
-            <div className="flex items-center gap-6 md:gap-8 flex-shrink-0">
+            {/* Desktop: single row */}
+            <div className="hidden md:flex items-center gap-8 flex-shrink-0">
               {partners.map((partner) => (
                 <Image
                   key={partner.key}
@@ -47,8 +48,23 @@ export default function SocialProof() {
                   alt={partner.alt}
                   width={100}
                   height={36}
-                  className="h-7 md:h-8 w-auto opacity-50 hover:opacity-80 transition-opacity"
+                  className="h-8 w-auto opacity-50 hover:opacity-80 transition-opacity object-contain"
                 />
+              ))}
+            </div>
+
+            {/* Mobile: 2x2 grid */}
+            <div className="md:hidden grid grid-cols-2 gap-4 w-full max-w-[280px]">
+              {partners.map((partner) => (
+                <div key={partner.key} className="flex items-center justify-center">
+                  <Image
+                    src={`/images/partners/${partner.file}`}
+                    alt={partner.alt}
+                    width={100}
+                    height={32}
+                    className="h-6 w-auto opacity-50 object-contain max-w-[120px]"
+                  />
+                </div>
               ))}
             </div>
           </div>

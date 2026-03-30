@@ -14,17 +14,30 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen overflow-hidden flex items-center justify-center"
     >
-      {/* Layer 1: Background video */}
+      {/* Layer 1: Background video — desktop (landscape) */}
       <video
         autoPlay
         muted
         loop
         playsInline
         poster="/images/hero-poster.jpg"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ opacity: 0.4, zIndex: 0 }}
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+        style={{ opacity: 0.55, zIndex: 0 }}
       >
         <source src="/images/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Layer 1: Background video — mobile (vertical) */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/images/heroimagevertical.jpg"
+        className="absolute inset-0 w-full h-full object-cover md:hidden"
+        style={{ opacity: 0.55, zIndex: 0 }}
+      >
+        <source src="/images/herovideovertical.mp4" type="video/mp4" />
       </video>
 
       {/* Layer 2: Dark blue gradient overlay on top of video */}
@@ -34,6 +47,7 @@ export default function Hero() {
           background: "var(--gradient-hero)",
           zIndex: 1,
           mixBlendMode: "multiply",
+          opacity: 0.85,
         }}
       />
       <div
@@ -104,7 +118,7 @@ export default function Hero() {
         {/* Headline */}
         <motion.h1
           {...fadeUp(0.2)}
-          className="text-[2.5rem] md:text-[4.5rem] font-[800] leading-[1.05] tracking-[-0.03em] text-white mb-6 max-w-4xl mx-auto"
+          className="text-[2.5rem] md:text-[4.5rem] font-[800] leading-[1.05] tracking-[-0.03em] text-white mb-6 md:whitespace-nowrap"
         >
           Your Car, Spotless{" "}
           <span className="text-primary-sky">Every Week</span>
@@ -113,11 +127,12 @@ export default function Hero() {
         {/* Subheadline */}
         <motion.p
           {...fadeUp(0.3)}
-          className="text-lg md:text-xl leading-relaxed max-w-[38rem] mx-auto mb-10"
+          className="text-lg md:text-xl leading-relaxed max-w-[42rem] mx-auto mb-10"
           style={{ color: "var(--color-text-on-dark-muted)" }}
         >
-          CarWash365 brings professional exterior car washing right to your
-          building. Sign up once, park your car, and let us handle the rest.
+          CarWash365 brings professional exterior car washing right to your building.
+          <br className="hidden md:block" />
+          {" "}Sign up once, park your car, and let us handle the rest.
         </motion.p>
 
         {/* CTAs */}
