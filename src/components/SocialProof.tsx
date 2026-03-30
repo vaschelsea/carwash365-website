@@ -39,30 +39,37 @@ export default function SocialProof() {
               across 7 cities
             </p>
 
-            {/* Desktop: single row */}
+            {/* Desktop: single row — uniform sizing */}
             <div className="hidden md:flex items-center gap-8 flex-shrink-0">
               {partners.map((partner) => (
-                <Image
+                <div
                   key={partner.key}
-                  src={`/images/partners/${partner.file}`}
-                  alt={partner.alt}
-                  width={100}
-                  height={36}
-                  className="h-8 w-auto opacity-50 hover:opacity-80 transition-opacity object-contain"
-                />
-              ))}
-            </div>
-
-            {/* Mobile: 2x2 grid */}
-            <div className="md:hidden grid grid-cols-2 gap-4 w-full max-w-[280px]">
-              {partners.map((partner) => (
-                <div key={partner.key} className="flex items-center justify-center">
+                  className="flex items-center justify-center w-[110px] h-[36px]"
+                >
                   <Image
                     src={`/images/partners/${partner.file}`}
                     alt={partner.alt}
-                    width={100}
-                    height={32}
-                    className="h-6 w-auto opacity-50 object-contain max-w-[120px]"
+                    width={110}
+                    height={36}
+                    className="w-full h-full opacity-50 hover:opacity-80 transition-opacity object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile: 2x2 grid — uniform sizing */}
+            <div className="md:hidden grid grid-cols-2 gap-4 w-full max-w-[280px]">
+              {partners.map((partner) => (
+                <div
+                  key={partner.key}
+                  className="flex items-center justify-center w-[110px] h-[28px] mx-auto"
+                >
+                  <Image
+                    src={`/images/partners/${partner.file}`}
+                    alt={partner.alt}
+                    width={110}
+                    height={28}
+                    className="w-full h-full opacity-50 object-contain"
                   />
                 </div>
               ))}

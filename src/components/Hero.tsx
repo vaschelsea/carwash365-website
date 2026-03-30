@@ -22,7 +22,7 @@ export default function Hero() {
         playsInline
         poster="/images/hero-poster.jpg"
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
-        style={{ opacity: 0.55, zIndex: 0 }}
+        style={{ opacity: 0.7, zIndex: 0 }}
       >
         <source src="/images/hero-video.mp4" type="video/mp4" />
       </video>
@@ -35,7 +35,7 @@ export default function Hero() {
         playsInline
         poster="/images/heroimagevertical.jpg"
         className="absolute inset-0 w-full h-full object-cover md:hidden"
-        style={{ opacity: 0.55, zIndex: 0 }}
+        style={{ opacity: 0.7, zIndex: 0 }}
       >
         <source src="/images/herovideovertical.mp4" type="video/mp4" />
       </video>
@@ -121,7 +121,7 @@ export default function Hero() {
           className="text-[2.5rem] md:text-[4.5rem] font-[800] leading-[1.05] tracking-[-0.03em] text-white mb-6 md:whitespace-nowrap"
         >
           Your Car, Spotless{" "}
-          <span className="text-primary-sky">Every Week</span>
+          <span className="text-primary-soft">Every Week</span>
         </motion.h1>
 
         {/* Subheadline */}
