@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Row 1 */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
           {/* Left: Logo + Powered by */}
-          <div className="flex flex-col items-center md:items-start gap-2">
+          <div className="flex flex-col items-center md:items-start">
             <Image
               src="/images/carwash365_logo_white.png"
               alt="CarWash365"
@@ -30,9 +30,6 @@ export default function Footer() {
               height={40}
               className="h-9 w-auto"
             />
-            <p className="text-xs" style={{ color: "var(--color-text-on-dark-muted)" }}>
-              Powered by TeamLynQ
-            </p>
           </div>
 
           {/* Right: Nav + Legal links */}

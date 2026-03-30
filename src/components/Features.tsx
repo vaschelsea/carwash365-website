@@ -76,9 +76,8 @@ export default function Features() {
             The Car Wash You Never Have to{" "}
             <span className="text-primary">Think About</span>
           </h2>
-          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
-            We designed every part of the service so you never have to think
-            about car care again.
+          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto md:whitespace-nowrap">
+            We designed every part of the service so you never have to think about car care again.
           </p>
         </AnimatedSection>
 
