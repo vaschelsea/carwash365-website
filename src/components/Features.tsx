@@ -73,8 +73,8 @@ export default function Features() {
             Features
           </span>
           <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 mb-4">
-            Built Around Your Life,{" "}
-            <span className="text-primary">Not Your Schedule</span>
+            The Car Wash You Never Have to{" "}
+            <span className="text-primary">Think About</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
             We designed every part of the service so you never have to think

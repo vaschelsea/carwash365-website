@@ -49,8 +49,9 @@ export default function PropertyManagers() {
               <span className="text-primary">to Your Property</span>
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)]">
-              A turnkey vehicle-care amenity that residents love — and your team
-              doesn&apos;t have to manage.
+              Your residents want premium. Your team is stretched thin. CarWash365
+              is the rare amenity that makes both groups happy — with zero work
+              from your side.
             </p>
           </AnimatedSection>
 

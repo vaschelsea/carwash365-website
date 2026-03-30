@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight } from "lucide-react";
-import HeroCar from "./HeroCar";
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 40 },
@@ -14,15 +13,35 @@ export default function Hero() {
     <section
       id="hero"
       className="relative min-h-screen overflow-hidden flex items-center justify-center"
-      style={{ background: "var(--gradient-hero)" }}
     >
-      {/* Radial overlay */}
+      {/* Layer 1: Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/images/hero-poster.jpg"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.4, zIndex: 0 }}
+      >
+        <source src="/images/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Layer 2: Dark blue gradient overlay on top of video */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "var(--gradient-hero)",
+          zIndex: 1,
+          mixBlendMode: "multiply",
+        }}
+      />
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: "var(--gradient-hero-radial)" }}
+        style={{ background: "var(--gradient-hero-radial)", zIndex: 2 }}
       />
 
-      {/* Animated gradient orbs */}
+      {/* Layer 3: Animated gradient orbs */}
       <div
         className="absolute rounded-full animate-orb"
         style={{
@@ -33,6 +52,7 @@ export default function Hero() {
           right: "15%",
           filter: "blur(80px)",
           opacity: 0.4,
+          zIndex: 3,
         }}
       />
       <div
@@ -46,6 +66,7 @@ export default function Hero() {
           filter: "blur(80px)",
           opacity: 0.4,
           animationDelay: "-3s",
+          zIndex: 3,
         }}
       />
       <div
@@ -59,10 +80,11 @@ export default function Hero() {
           filter: "blur(80px)",
           opacity: 0.4,
           animationDelay: "-5s",
+          zIndex: 3,
         }}
       />
 
-      {/* Content */}
+      {/* Layer 4: Content */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
         {/* Overline badge */}
         <motion.div {...fadeUp(0.1)} className="flex justify-center mb-6">
@@ -75,7 +97,7 @@ export default function Hero() {
             }}
           >
             <Sparkles size={14} />
-            A premium amenity at your building
+            Premium Car Wash Membership
           </span>
         </motion.div>
 
@@ -84,8 +106,8 @@ export default function Hero() {
           {...fadeUp(0.2)}
           className="text-[2.5rem] md:text-[4.5rem] font-[800] leading-[1.05] tracking-[-0.03em] text-white mb-6 max-w-4xl mx-auto"
         >
-          Park It. We Handle{" "}
-          <span className="text-primary-sky">the Rest.</span>
+          Your Car, Spotless{" "}
+          <span className="text-primary-sky">Every Week</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -94,9 +116,8 @@ export default function Hero() {
           className="text-lg md:text-xl leading-relaxed max-w-[38rem] mx-auto mb-10"
           style={{ color: "var(--color-text-on-dark-muted)" }}
         >
-          CarWash365 brings professional car washing right to your building&apos;s
-          garage. Sign up, park your car, and wake up to a spotless ride —
-          every single week. No scheduling. No trips. No hassle.
+          CarWash365 brings professional exterior car washing right to your
+          building. Sign up once, park your car, and let us handle the rest.
         </motion.p>
 
         {/* CTAs */}
@@ -117,7 +138,9 @@ export default function Hero() {
           </a>
           <button
             onClick={() => {
-              document.querySelector("#how-it-works")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .querySelector("#how-it-works")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="inline-flex items-center px-9 py-4 rounded-btn text-[0.9375rem] font-semibold text-white transition-all duration-250 hover:-translate-y-0.5 focus:outline-2 focus:outline-white focus:outline-offset-2"
             style={{
@@ -141,11 +164,6 @@ export default function Hero() {
           <span>✓ Done in your parking spot</span>
           <span>·</span>
           <span>✓ Cancel anytime</span>
-        </motion.div>
-
-        {/* Animated car */}
-        <motion.div {...fadeUp(0.6)}>
-          <HeroCar />
         </motion.div>
       </div>
     </section>

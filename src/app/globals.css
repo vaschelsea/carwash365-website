@@ -33,26 +33,15 @@
   --shadow-popular-tag: 0 4px 16px rgba(4, 57, 217, 0.40);
   --shadow-card-featured: 0 8px 32px rgba(4, 57, 217, 0.12), 0 0 0 1px rgba(4, 57, 217, 0.08);
 
-  --animate-float: float 4s ease-in-out infinite;
   --animate-orb: orb-float 8s ease-in-out infinite;
-  --animate-sparkle: sparkle-float 3s ease-in-out infinite;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-  }
   @keyframes orb-float {
     0%, 100% { transform: translate(0, 0) scale(1); }
     33% { transform: translate(30px, -20px) scale(1.05); }
     66% { transform: translate(-20px, 15px) scale(0.95); }
-  }
-  @keyframes sparkle-float {
-    0% { opacity: 0; transform: translateY(0) scale(0.5); }
-    20% { opacity: 1; }
-    100% { opacity: 0; transform: translateY(-60px) scale(1); }
   }
 }
 
