@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+@theme inline {
+  --color-primary: #0439D9;
+  --color-primary-hover: #0330B8;
+  --color-primary-light: #044BD9;
+  --color-primary-sky: #2561D9;
+  --color-primary-soft: #94B3F2;
+
+  --color-dark-900: #0A0E27;
+  --color-dark-800: #111640;
+  --color-dark-700: #1A2050;
+  --color-dark-600: #252B65;
+
+  --color-brand-bg: #F8FAFF;
+  --color-brand-yellow: #FDD901;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --radius-glass: 20px;
+  --radius-glass-lg: 24px;
+  --radius-btn: 14px;
+  --radius-icon: 16px;
+  --radius-icon-lg: 20px;
+
+  --shadow-glass: 0 8px 32px rgba(4, 57, 217, 0.08);
+  --shadow-glass-hover: 0 16px 48px rgba(4, 57, 217, 0.10);
+  --shadow-glass-dark: 0 8px 32px rgba(0, 0, 0, 0.30);
+  --shadow-glass-dark-hover: 0 12px 40px rgba(0, 0, 0, 0.40);
+  --shadow-btn-glow: 0 4px 20px rgba(4, 57, 217, 0.40);
+  --shadow-btn-glow-hover: 0 8px 30px rgba(4, 57, 217, 0.50);
+  --shadow-popular-tag: 0 4px 16px rgba(4, 57, 217, 0.40);
+  --shadow-card-featured: 0 8px 32px rgba(4, 57, 217, 0.12), 0 0 0 1px rgba(4, 57, 217, 0.08);
+
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-orb: orb-float 8s ease-in-out infinite;
+  --animate-sparkle: sparkle-float 3s ease-in-out infinite;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes orb-float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -20px) scale(1.05); }
+    66% { transform: translate(-20px, 15px) scale(0.95); }
+  }
+  @keyframes sparkle-float {
+    0% { opacity: 0; transform: translateY(0) scale(0.5); }
+    20% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-60px) scale(1); }
+  }
+}
+
+:root {
+  /* Glass System */
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-bg-hover: rgba(255, 255, 255, 0.70);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-shadow: 0 8px 32px rgba(4, 57, 217, 0.08);
+  --glass-blur: 16px;
+
+  --glass-dark-bg: rgba(17, 22, 64, 0.60);
+  --glass-dark-bg-hover: rgba(17, 22, 64, 0.75);
+  --glass-dark-border: rgba(255, 255, 255, 0.08);
+  --glass-dark-shadow: 0 8px 32px rgba(0, 0, 0, 0.30);
+
+  /* Text */
+  --color-text-primary: #0A0E27;
+  --color-text-secondary: #3D4263;
+  --color-text-muted: #6B7094;
+  --color-text-on-dark: #FFFFFF;
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.65);
+
+  /* Accent */
+  --color-accent-glow: rgba(4, 57, 217, 0.40);
+
+  /* Borders */
+  --color-border-light: rgba(4, 57, 217, 0.08);
+  --color-border-hover: rgba(4, 57, 217, 0.20);
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #0A0E27 0%, #111640 40%, #0439D9 100%);
+  --gradient-hero-radial: radial-gradient(ellipse at 70% 50%, rgba(4, 57, 217, 0.30) 0%, transparent 60%);
+  --gradient-cta-section: linear-gradient(135deg, #0A0E27 0%, #1A2050 50%, #0439D9 100%);
+  --gradient-light-section: linear-gradient(180deg, #F8FAFF 0%, #EEF2FF 100%);
+  --gradient-mesh: radial-gradient(at 20% 80%, rgba(4, 75, 217, 0.15) 0%, transparent 50%),
+                    radial-gradient(at 80% 20%, rgba(37, 97, 217, 0.10) 0%, transparent 50%),
+                    radial-gradient(at 50% 50%, rgba(148, 179, 242, 0.08) 0%, transparent 70%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #F8FAFF;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
