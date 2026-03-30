@@ -60,7 +60,7 @@ export default function FAQ() {
           >
             FAQ
           </span>
-          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900">
+          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 md:whitespace-nowrap">
             Got Questions?{" "}
             <span className="text-primary">We&apos;ve Got Answers.</span>
           </h2>
