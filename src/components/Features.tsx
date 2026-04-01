@@ -15,37 +15,37 @@ const features = [
     icon: CalendarCheck,
     title: "One Wash Night. Zero Effort.",
     description:
-      "Your building has a set wash night each week. Just park where you normally do and we take care of the rest. No booking. No reminders needed.",
+      "Your building has a set wash night. Just park and we handle the rest.",
   },
   {
     icon: BellRing,
     title: "You'll Always Know When It's Done",
     description:
-      "Get a heads-up before wash night and a confirmation once your car has been washed. No guessing, no surprises.",
+      "Reminders before. Confirmation after. That's it.",
   },
   {
     icon: ShieldCheck,
     title: "Premium Products. Trained Hands.",
     description:
-      "Our technicians use paint-safe, eco-friendly products and follow standardized procedures. Your car is in good hands, every single time.",
+      "Paint-safe, eco-friendly products. Trained technicians. Consistent results.",
   },
   {
     icon: Clock,
     title: "Get Your Weekends Back",
     description:
-      "No more driving to a car wash, waiting in line, or blocking out your Saturday morning. We come to you while you sleep, work, or do literally anything else.",
+      "We come to you while you sleep, work, or do anything else.",
   },
   {
     icon: Smartphone,
     title: "Manage Everything From Your Phone",
     description:
-      "Update your vehicle info, check your wash history, manage billing, and add a second car — all from one simple dashboard.",
+      "Vehicle info, wash history, billing — all in one dashboard.",
   },
   {
     icon: Leaf,
     title: "Clean Car, Clean Conscience",
     description:
-      "Our waterless, minimal-water system is designed for garages and built for the environment. Professional results without the waste.",
+      "Waterless system built for garages and the environment.",
   },
 ];
 
@@ -76,8 +76,8 @@ export default function Features() {
             The Car Wash You Never Have to{" "}
             <span className="text-primary">Think About</span>
           </h2>
-          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto md:whitespace-nowrap">
-            We designed every part of the service so you never have to think about car care again.
+          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
+            Everything is handled. Here&apos;s why residents love it.
           </p>
         </AnimatedSection>
 
