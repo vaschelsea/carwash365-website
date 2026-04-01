@@ -132,7 +132,7 @@ export default function Hero() {
         >
           CarWash365 brings professional exterior car washing right to your building.
           <br className="hidden md:block" />
-          Sign up once, park your car, and let us handle the rest.
+          {" "}Sign up once, park your car, and let us handle the rest.
         </motion.p>
 
         {/* CTAs */}

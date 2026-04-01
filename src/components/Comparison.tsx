@@ -7,7 +7,7 @@ const rows = [
   {
     label: "Consistency",
     old: "Varies by location",
-    cw: "Same trained team, every time",
+    cw: "Same team, every time",
   },
   {
     label: "Cost clarity",
@@ -17,7 +17,7 @@ const rows = [
   {
     label: "Water usage",
     old: "Hundreds of gallons per wash",
-    cw: "Eco-friendly, minimal-water",
+    cw: "Eco-friendly, minimal water",
   },
   {
     label: "Your effort",
@@ -46,7 +46,7 @@ export default function Comparison() {
         <AnimatedSection delay={0.08}>
           <div className="overflow-x-auto -mx-5 px-5">
             <table
-              className="w-full min-w-[440px]"
+              className="w-full min-w-[360px]"
               style={{
                 borderCollapse: "separate",
                 borderSpacing: 0,
