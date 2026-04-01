@@ -67,8 +67,9 @@ export default function Pricing() {
             Pricing
           </span>
           <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 mb-4">
-            Simple Pricing.{" "}
-            <span className="text-primary">No Surprises.</span>
+            Simple Pricing.
+            <br className="md:hidden" />
+            <span className="text-primary"> No Surprises.</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
             Pick the plan that fits how you like to take care of your car. Every
@@ -153,10 +154,10 @@ export default function Pricing() {
         </div>
 
         {/* CTA below cards */}
-        <AnimatedSection delay={0.32} className="text-center">
+        <AnimatedSection delay={0.32} className="text-center max-w-md mx-auto">
           <a
             href="https://www.carwash365.com/signup"
-            className="inline-flex items-center gap-2 px-9 py-4 rounded-btn text-[0.9375rem] font-semibold text-white bg-primary hover:bg-primary-hover transition-all duration-250 hover:-translate-y-0.5 mb-4 focus:outline-2 focus:outline-primary focus:outline-offset-2"
+            className="inline-flex items-center gap-2 px-9 py-4 rounded-btn text-[0.9375rem] font-semibold text-white bg-primary hover:bg-primary-hover transition-all duration-250 hover:-translate-y-0.5 mb-5 focus:outline-2 focus:outline-primary focus:outline-offset-2"
             style={{
               boxShadow:
                 "0 4px 20px rgba(4, 57, 217, 0.40), 0 0 0 1px rgba(255,255,255,0.1) inset",
@@ -165,20 +166,16 @@ export default function Pricing() {
             Start Your Membership
             <ArrowRight size={18} />
           </a>
-          <p className="text-sm text-[var(--color-text-muted)] mb-2">
-            Secure payment via Stripe. Cancel anytime.
+          <p className="text-sm leading-relaxed text-[var(--color-text-muted)] mb-3">
+            Secure payment via Stripe. Cancel anytime. No contracts.
           </p>
-          <p className="text-sm text-[var(--color-text-secondary)] mb-4">
-            All plans include weekly service. Upgrade, downgrade, or cancel
-            whenever you want.
-          </p>
-          <p className="text-[0.9375rem] text-[var(--color-text-secondary)]">
+          <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] mb-3">
             Not sure which plan?{" "}
             <strong className="text-dark-900">
               Start with Basic — you can always upgrade later.
             </strong>
           </p>
-          <p className="text-[0.9375rem] font-medium text-primary mt-3">
+          <p className="text-sm font-medium text-primary leading-relaxed">
             Limited availability per building. Check if your property is active.
           </p>
         </AnimatedSection>

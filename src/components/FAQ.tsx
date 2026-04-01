@@ -7,35 +7,27 @@ import AnimatedSection from "./AnimatedSection";
 const faqs = [
   {
     q: "How does the wash schedule work?",
-    a: "Each building has a designated wash night (for example, every Thursday evening). Our team comes to the garage after hours and washes every member's car in their parking spot. You don't need to schedule anything or be present.",
+    a: "Each building has a designated wash night. Our team comes after hours and washes every member\u2019s car in their spot. You don\u2019t need to schedule anything or be present.",
   },
   {
-    q: "What if I'm not parked in my usual spot?",
-    a: "No problem. You can update your parking location anytime through your account. If we can't find your car on wash night, we'll send you a notification so we can catch you the following week.",
+    q: "What if I\u2019m not parked in my usual spot?",
+    a: "Update your spot anytime in your account. If we can\u2019t find your car, we\u2019ll notify you and catch you next week.",
   },
   {
     q: "Do I need to leave my keys?",
-    a: "Never. We only wash the exterior of your car (unless you're on a plan with interior service, in which case we'll coordinate access with you). Your keys stay with you at all times.",
+    a: "Never. We wash the exterior only. For plans with interior service, we\u2019ll coordinate access separately. Your keys always stay with you.",
   },
   {
     q: "What products do you use? Are they safe for my paint?",
-    a: "We use premium, pH-balanced, paint-safe products designed for hand washing. Our waterless and minimal-water system is specifically formulated to lift dirt without scratching — it's actually gentler than a drive-through car wash.",
-  },
-  {
-    q: "What if it rains on wash night?",
-    a: "Since most of our properties have covered garages, rain typically doesn't affect service. If your car is parked outdoors and weather is an issue, we'll notify you and make it up the following week.",
+    a: "Premium, pH-balanced, paint-safe products. Our waterless system lifts dirt without scratching \u2014 gentler than any drive-through.",
   },
   {
     q: "Can I cancel anytime?",
-    a: "Yes. There are no contracts or cancellation fees. You can cancel, pause, or change your plan anytime from your account dashboard.",
-  },
-  {
-    q: "Can I add a second vehicle?",
-    a: "Absolutely. You can add multiple vehicles to your account. Each vehicle gets its own membership and wash service.",
+    a: "Yes. No contracts, no fees. Cancel, pause, or switch plans anytime from your dashboard.",
   },
   {
     q: "Is CarWash365 available at my building?",
-    a: "We're currently active in select buildings across Houston, Austin, and several other major markets, with new properties launching regularly. Enter your building during signup to check availability, or reach out to us at support@carwash365.com.",
+    a: "We\u2019re active across Houston, Austin, and expanding into several new markets. Check availability during signup or email us at support@carwash365.com.",
   },
 ];
 
