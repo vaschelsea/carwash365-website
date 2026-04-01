@@ -77,7 +77,7 @@ export default function Pricing() {
         </AnimatedSection>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-7 items-stretch mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-7 items-stretch mb-12 max-w-[85%] mx-auto md:max-w-none">
           {tiers.map((tier, i) => (
             <AnimatedSection key={tier.name} delay={i * 0.08}>
               <motion.div

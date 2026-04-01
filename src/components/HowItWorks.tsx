@@ -51,9 +51,8 @@ export default function HowItWorks() {
             Four Steps to a Car That&apos;s{" "}
             <span className="text-primary">Always Clean</span>
           </h2>
-          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
-            No apps. No appointments. Just four quick steps and you&apos;re set
-            for good.
+          <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto md:whitespace-nowrap">
+            No apps. No appointments. Just four quick steps and you&apos;re set for good.
           </p>
         </AnimatedSection>
 

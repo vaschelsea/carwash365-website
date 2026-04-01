@@ -33,7 +33,7 @@ export default function PropertyManagers() {
     >
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <AnimatedSection className="mb-12">
+          <AnimatedSection className="mb-12 text-center">
             <span
               className="inline-flex items-center gap-2 px-4.5 py-2 rounded-full text-[0.8125rem] font-semibold uppercase tracking-[0.06em] mb-5"
               style={{

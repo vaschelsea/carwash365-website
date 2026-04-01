@@ -46,7 +46,7 @@ export default function Comparison() {
         <AnimatedSection delay={0.08}>
           <div className="overflow-x-auto -mx-5 px-5">
             <table
-              className="w-full min-w-[540px]"
+              className="w-full min-w-[440px]"
               style={{
                 borderCollapse: "separate",
                 borderSpacing: 0,
@@ -60,14 +60,14 @@ export default function Comparison() {
             >
               <thead>
                 <tr>
-                  <th className="text-left py-4.5 px-6 text-[0.9375rem] font-bold text-dark-900 border-b border-[rgba(4,57,217,0.06)]">
+                  <th className="text-left py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-[0.9375rem] font-bold text-dark-900 border-b border-[rgba(4,57,217,0.06)]">
                     &nbsp;
                   </th>
-                  <th className="text-center py-4.5 px-6 text-[0.9375rem] font-bold text-[var(--color-text-muted)] border-b border-[rgba(4,57,217,0.06)]">
+                  <th className="text-center py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-[0.9375rem] font-bold text-[var(--color-text-muted)] border-b border-[rgba(4,57,217,0.06)]">
                     Traditional Car Wash
                   </th>
                   <th
-                    className="text-center py-4.5 px-6 text-[0.9375rem] font-bold text-primary border-b border-[rgba(4,57,217,0.06)]"
+                    className="text-center py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-[0.9375rem] font-bold text-primary border-b border-[rgba(4,57,217,0.06)]"
                     style={{ background: "rgba(4, 57, 217, 0.04)" }}
                   >
                     CarWash365
@@ -78,7 +78,7 @@ export default function Comparison() {
                 {rows.map((row, i) => (
                   <tr key={row.label}>
                     <td
-                      className={`text-left py-4.5 px-6 text-sm font-semibold text-dark-900 ${
+                      className={`text-left py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-sm font-semibold text-dark-900 ${
                         i < rows.length - 1
                           ? "border-b border-[rgba(4,57,217,0.06)]"
                           : ""
@@ -87,7 +87,7 @@ export default function Comparison() {
                       {row.label}
                     </td>
                     <td
-                      className={`text-center py-4.5 px-6 text-sm text-[var(--color-text-muted)] ${
+                      className={`text-center py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-sm text-[var(--color-text-muted)] ${
                         i < rows.length - 1
                           ? "border-b border-[rgba(4,57,217,0.06)]"
                           : ""
@@ -96,7 +96,7 @@ export default function Comparison() {
                       {row.old}
                     </td>
                     <td
-                      className={`text-center py-4.5 px-6 text-sm font-semibold text-primary ${
+                      className={`text-center py-3 px-3 md:py-4.5 md:px-6 text-xs md:text-sm font-semibold text-primary ${
                         i < rows.length - 1
                           ? "border-b border-[rgba(4,57,217,0.06)]"
                           : ""
