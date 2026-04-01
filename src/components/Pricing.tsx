@@ -166,9 +166,8 @@ export default function Pricing() {
             Start Your Membership
             <ArrowRight size={18} />
           </a>
-          <p className="text-sm leading-relaxed text-[var(--color-text-muted)] mb-4">
-            Secure payment via Stripe. Cancel anytime. All plans include weekly
-            service. Upgrade, downgrade, or cancel whenever you want.
+          <p className="text-sm leading-relaxed text-[var(--color-text-muted)] mb-3">
+            Secure payment via Stripe. Cancel anytime. No contracts.
           </p>
           <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] mb-3">
             Not sure which plan?{" "}

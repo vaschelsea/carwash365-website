@@ -56,30 +56,32 @@ export default function PropertyManagers() {
             </p>
           </AnimatedSection>
 
-          <div className="flex flex-col gap-6 mb-12">
-            {valueProps.map((vp, i) => (
-              <AnimatedSection key={i} delay={i * 0.08}>
-                <div
-                  className="p-8"
-                  style={{
-                    background: "var(--glass-bg)",
-                    backdropFilter: "blur(16px)",
-                    WebkitBackdropFilter: "blur(16px)",
-                    border: "1px solid var(--glass-border)",
-                    borderRadius: "20px",
-                    boxShadow: "var(--glass-shadow)",
-                  }}
-                >
-                  <p className="text-[0.9375rem] leading-[1.7] text-[var(--color-text-secondary)]">
-                    <strong className="text-dark-900 font-semibold">
+          <AnimatedSection delay={0.08} className="mb-12">
+            <div
+              className="p-8 md:p-10"
+              style={{
+                background: "var(--glass-bg)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid var(--glass-border)",
+                borderRadius: "20px",
+                boxShadow: "var(--glass-shadow)",
+              }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {valueProps.map((vp, i) => (
+                  <div key={i}>
+                    <p className="text-[0.9375rem] font-semibold text-dark-900 mb-1">
                       {vp.bold}
-                    </strong>{" "}
-                    {vp.text}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+                    </p>
+                    <p className="text-sm leading-[1.7] text-[var(--color-text-secondary)]">
+                      {vp.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
 
           <AnimatedSection delay={0.4} className="text-center">
             <a
