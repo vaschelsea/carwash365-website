@@ -60,8 +60,9 @@ export default function FAQ() {
           >
             FAQ
           </span>
-          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 md:whitespace-nowrap">
+          <h2 className="text-[1.75rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 md:whitespace-nowrap">
             Got Questions?{" "}
+            <br className="md:hidden" />
             <span className="text-primary">We&apos;ve Got Answers.</span>
           </h2>
         </AnimatedSection>

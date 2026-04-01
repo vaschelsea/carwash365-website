@@ -72,7 +72,7 @@ export default function Features() {
           >
             Features
           </span>
-          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 mb-4">
+          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 mb-4 md:whitespace-nowrap">
             The Car Wash You Never Have to{" "}
             <span className="text-primary">Think About</span>
           </h2>

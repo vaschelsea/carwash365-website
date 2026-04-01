@@ -40,7 +40,7 @@ export default function Testimonials() {
           >
             Testimonials
           </span>
-          <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-white mb-4 md:whitespace-nowrap">
+          <h2 className="text-[1.75rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-white mb-4 md:whitespace-nowrap">
             Hundreds of Residents.{" "}
             <span className="text-primary-sky">
               One Fewer Thing to Worry About.
