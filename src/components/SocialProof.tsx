@@ -16,10 +16,10 @@ export default function SocialProof() {
         background: "linear-gradient(180deg, #0A0E27 0%, #111640 100%)",
       }}
     >
-      <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div
-            className="rounded-glass px-6 py-6 md:px-10 md:py-5 flex flex-col md:flex-row items-center justify-between gap-6"
+            className="rounded-glass px-6 py-6 md:px-8 md:py-5 flex flex-col md:flex-row items-center justify-between gap-6"
             style={{
               background: "var(--glass-dark-bg)",
               backdropFilter: "blur(16px)",
@@ -44,13 +44,13 @@ export default function SocialProof() {
               {partners.map((partner) => (
                 <div
                   key={partner.key}
-                  className="flex items-center justify-center w-[110px] h-[36px]"
+                  className={`flex items-center justify-center ${partner.key === "arabella" ? "w-[140px] h-[44px]" : "w-[110px] h-[36px]"}`}
                 >
                   <Image
                     src={`/images/partners/${partner.file}`}
                     alt={partner.alt}
-                    width={110}
-                    height={36}
+                    width={partner.key === "arabella" ? 140 : 110}
+                    height={partner.key === "arabella" ? 44 : 36}
                     className="w-full h-full opacity-50 hover:opacity-80 transition-opacity object-contain"
                   />
                 </div>
@@ -62,13 +62,13 @@ export default function SocialProof() {
               {partners.map((partner) => (
                 <div
                   key={partner.key}
-                  className="flex items-center justify-center w-[110px] h-[28px] mx-auto"
+                  className={`flex items-center justify-center mx-auto ${partner.key === "arabella" ? "w-[130px] h-[34px]" : "w-[110px] h-[28px]"}`}
                 >
                   <Image
                     src={`/images/partners/${partner.file}`}
                     alt={partner.alt}
-                    width={110}
-                    height={28}
+                    width={partner.key === "arabella" ? 130 : 110}
+                    height={partner.key === "arabella" ? 34 : 28}
                     className="w-full h-full opacity-50 object-contain"
                   />
                 </div>

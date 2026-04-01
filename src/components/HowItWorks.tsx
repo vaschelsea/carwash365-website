@@ -57,7 +57,7 @@ export default function HowItWorks() {
         </AnimatedSection>
 
         {/* Step cards — desktop: horizontal with connectors */}
-        <div className="hidden lg:flex items-stretch justify-between gap-10">
+        <div className="hidden lg:flex items-stretch">
           {steps.map((step, i) => (
             <AnimatedSection
               key={step.title}
@@ -67,7 +67,7 @@ export default function HowItWorks() {
               <div className="flex items-stretch w-full">
                 {/* Card */}
                 <div
-                  className="relative p-6 text-center flex-1 transition-all duration-350 hover:-translate-y-1"
+                  className="relative p-6 text-center flex-1 transition-all duration-350 hover:-translate-y-1 z-[1]"
                   style={{
                     background: "var(--glass-bg)",
                     backdropFilter: "blur(12px)",
@@ -113,7 +113,7 @@ export default function HowItWorks() {
 
                 {/* Connector line between cards */}
                 {i < steps.length - 1 && (
-                  <div className="flex items-center w-10 flex-shrink-0 -mx-5 relative z-0">
+                  <div className="flex items-center w-8 flex-shrink-0 -ml-1 -mr-1 relative z-0">
                     {/* Line */}
                     <div
                       className="w-full h-[2px]"
@@ -122,15 +122,10 @@ export default function HowItWorks() {
                           "linear-gradient(90deg, rgba(4, 57, 217, 0.35), rgba(4, 57, 217, 0.15))",
                       }}
                     />
-                    {/* Dot at start */}
+                    {/* Dot at midpoint */}
                     <div
-                      className="absolute left-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] rounded-full"
-                      style={{ background: "rgba(4, 57, 217, 0.4)" }}
-                    />
-                    {/* Dot at end */}
-                    <div
-                      className="absolute right-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] rounded-full"
-                      style={{ background: "rgba(4, 57, 217, 0.2)" }}
+                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[6px] h-[6px] rounded-full"
+                      style={{ background: "rgba(4, 57, 217, 0.3)" }}
                     />
                   </div>
                 )}
