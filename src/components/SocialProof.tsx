@@ -16,7 +16,7 @@ export default function SocialProof() {
         background: "linear-gradient(180deg, #0A0E27 0%, #111640 100%)",
       }}
     >
-      <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="max-w-[1060px] mx-auto px-5 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div
             className="rounded-glass px-6 py-6 md:px-8 md:py-5 flex flex-col md:flex-row items-center justify-between gap-6"

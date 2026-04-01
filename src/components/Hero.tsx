@@ -127,7 +127,7 @@ export default function Hero() {
         {/* Subheadline */}
         <motion.p
           {...fadeUp(0.3)}
-          className="text-lg md:text-xl leading-relaxed max-w-[42rem] mx-auto mb-10"
+          className="text-lg md:text-xl leading-relaxed max-w-[48rem] mx-auto mb-10"
           style={{ color: "var(--color-text-on-dark-muted)" }}
         >
           CarWash365 brings professional exterior car washing right to your building.
