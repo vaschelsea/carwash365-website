@@ -130,11 +130,9 @@ export default function Hero() {
           className="text-lg md:text-xl leading-relaxed max-w-[42rem] mx-auto mb-10"
           style={{ color: "var(--color-text-on-dark-muted)" }}
         >
-          CarWash365 brings professional exterior car washing
+          CarWash365 brings professional exterior car washing right to your building.
           <br className="hidden md:block" />
-          {" "}right to your building. Sign up once, park your car,
-          <br className="hidden md:block" />
-          {" "}and let us handle the rest.
+          Sign up once, park your car, and let us handle the rest.
         </motion.p>
 
         {/* CTAs */}
@@ -177,9 +175,7 @@ export default function Hero() {
           style={{ color: "var(--color-text-on-dark-muted)" }}
         >
           <span>✓ Weekly professional wash</span>
-          <span>·</span>
           <span>✓ Done in your parking spot</span>
-          <span>·</span>
           <span>✓ Cancel anytime</span>
         </motion.div>
       </div>

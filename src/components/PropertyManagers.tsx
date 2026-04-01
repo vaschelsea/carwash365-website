@@ -45,8 +45,9 @@ export default function PropertyManagers() {
               For Property Managers
             </span>
             <h2 className="text-[2rem] md:text-[3rem] font-bold leading-[1.15] tracking-[-0.02em] text-dark-900 mb-4">
-              Bring CarWash365{" "}
-              <span className="text-primary">to Your Property</span>
+              Bring CarWash365
+              <br className="hidden md:block" />
+              <span className="text-primary"> to Your Property</span>
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)]">
               Your residents want premium. Your team is stretched thin. CarWash365
