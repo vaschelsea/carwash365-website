@@ -40,7 +40,7 @@ export default function SocialProof() {
             </p>
 
             {/* Desktop: single row — uniform sizing */}
-            <div className="hidden md:flex items-center gap-8 flex-shrink-0">
+            <div className="hidden md:flex items-center gap-6 flex-shrink-0">
               {partners.map((partner) => (
                 <div
                   key={partner.key}

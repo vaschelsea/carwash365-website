@@ -73,7 +73,7 @@ export default function Pricing() {
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
             Every plan includes a weekly professional wash.
-            <br className="md:hidden" />
+            <br />
             Pick the plan that fits your car.
           </p>
         </AnimatedSection>
