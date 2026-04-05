@@ -73,7 +73,7 @@ export default function Pricing() {
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
             Every plan includes a weekly professional wash.
-            <br className="md:hidden" />
+            <br />
             Pick the plan that fits your car.
           </p>
         </AnimatedSection>
@@ -174,7 +174,9 @@ export default function Pricing() {
             Not sure which plan? <strong className="text-dark-900">Start with Basic</strong> — upgrade anytime.
           </p>
           <p className="text-xs font-medium text-primary">
-            Limited availability per building. Check if your property is active.
+            Limited availability per building.
+            <br />
+            Check if your property is active.
           </p>
         </AnimatedSection>
       </div>
