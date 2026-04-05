@@ -170,10 +170,10 @@ export default function Pricing() {
           <p className="text-xs text-[var(--color-text-muted)] mb-6">
             Secure payment via Stripe · Cancel anytime · No contracts
           </p>
-          <p className="text-sm text-[var(--color-text-secondary)] mb-4">
+          <p className="text-sm text-[var(--color-text-secondary)] mb-6">
             Not sure which plan? <strong className="text-dark-900">Start with Basic</strong> — upgrade anytime.
           </p>
-          <p className="text-xs font-medium text-primary mt-1">
+          <p className="text-xs font-medium text-primary">
             Limited availability per building. Check if your property is active.
           </p>
         </AnimatedSection>

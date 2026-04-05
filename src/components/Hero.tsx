@@ -47,7 +47,7 @@ export default function Hero() {
           background: "var(--gradient-hero)",
           zIndex: 1,
           mixBlendMode: "multiply",
-          opacity: 0.75,
+          opacity: 0.65,
         }}
       />
       <div
