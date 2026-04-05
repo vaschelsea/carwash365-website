@@ -17,8 +17,8 @@ export default function FinalCTA() {
             className="text-base md:text-lg leading-relaxed max-w-[38rem] mx-auto mb-10"
             style={{ color: "var(--color-text-on-dark-muted)" }}
           >
-            Join hundreds of residents who wake up to a clean car every week.
-            Sign up in 2 minutes and let us handle the rest.
+            Join hundreds of residents who wake up to a clean car
+            every week. Sign up in 2 minutes.
           </p>
           <a
             href="https://www.carwash365.com/signup"
