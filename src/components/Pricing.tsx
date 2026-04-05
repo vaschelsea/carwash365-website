@@ -72,7 +72,9 @@ export default function Pricing() {
             <span className="text-primary"> No Surprises.</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
-            Every plan includes a weekly professional wash. Pick the one that fits your car.
+            Every plan includes a weekly professional wash.
+            <br className="md:hidden" />
+            Pick the plan that fits your car.
           </p>
         </AnimatedSection>
 
@@ -168,10 +170,10 @@ export default function Pricing() {
           <p className="text-xs text-[var(--color-text-muted)] mb-6">
             Secure payment via Stripe · Cancel anytime · No contracts
           </p>
-          <p className="text-sm text-[var(--color-text-secondary)] mb-2">
+          <p className="text-sm text-[var(--color-text-secondary)] mb-4">
             Not sure which plan? <strong className="text-dark-900">Start with Basic</strong> — upgrade anytime.
           </p>
-          <p className="text-xs font-medium text-primary">
+          <p className="text-xs font-medium text-primary mt-1">
             Limited availability per building. Check if your property is active.
           </p>
         </AnimatedSection>
