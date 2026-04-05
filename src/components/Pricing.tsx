@@ -72,8 +72,7 @@ export default function Pricing() {
             <span className="text-primary"> No Surprises.</span>
           </h2>
           <p className="text-base md:text-lg leading-relaxed text-[var(--color-text-secondary)] max-w-[38rem] mx-auto">
-            Pick the plan that fits how you like to take care of your car. Every
-            plan includes a weekly professional exterior wash.
+            Every plan includes a weekly professional wash. Pick the one that fits your car.
           </p>
         </AnimatedSection>
 
@@ -154,10 +153,10 @@ export default function Pricing() {
         </div>
 
         {/* CTA below cards */}
-        <AnimatedSection delay={0.32} className="text-center max-w-md mx-auto">
+        <AnimatedSection delay={0.32} className="text-center">
           <a
             href="https://www.carwash365.com/signup"
-            className="inline-flex items-center gap-2 px-9 py-4 rounded-btn text-[0.9375rem] font-semibold text-white bg-primary hover:bg-primary-hover transition-all duration-250 hover:-translate-y-0.5 mb-5 focus:outline-2 focus:outline-primary focus:outline-offset-2"
+            className="inline-flex items-center gap-2 px-9 py-4 rounded-btn text-[0.9375rem] font-semibold text-white bg-primary hover:bg-primary-hover transition-all duration-250 hover:-translate-y-0.5 mb-6 focus:outline-2 focus:outline-primary focus:outline-offset-2"
             style={{
               boxShadow:
                 "0 4px 20px rgba(4, 57, 217, 0.40), 0 0 0 1px rgba(255,255,255,0.1) inset",
@@ -166,16 +165,13 @@ export default function Pricing() {
             Start Your Membership
             <ArrowRight size={18} />
           </a>
-          <p className="text-sm leading-relaxed text-[var(--color-text-muted)] mb-3">
-            Secure payment via Stripe. Cancel anytime. No contracts.
+          <p className="text-xs text-[var(--color-text-muted)] mb-6">
+            Secure payment via Stripe · Cancel anytime · No contracts
           </p>
-          <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] mb-3">
-            Not sure which plan?{" "}
-            <strong className="text-dark-900">
-              Start with Basic — you can always upgrade later.
-            </strong>
+          <p className="text-sm text-[var(--color-text-secondary)] mb-2">
+            Not sure which plan? <strong className="text-dark-900">Start with Basic</strong> — upgrade anytime.
           </p>
-          <p className="text-sm font-medium text-primary leading-relaxed">
+          <p className="text-xs font-medium text-primary">
             Limited availability per building. Check if your property is active.
           </p>
         </AnimatedSection>
