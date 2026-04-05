@@ -174,7 +174,9 @@ export default function Pricing() {
             Not sure which plan? <strong className="text-dark-900">Start with Basic</strong> — upgrade anytime.
           </p>
           <p className="text-xs font-medium text-primary">
-            Limited availability per building. Check if your property is active.
+            Limited availability per building.
+            <br />
+            Check if your property is active.
           </p>
         </AnimatedSection>
       </div>
